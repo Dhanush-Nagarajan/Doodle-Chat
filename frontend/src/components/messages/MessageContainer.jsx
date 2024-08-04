@@ -28,9 +28,9 @@ const NoChatSelected = () => {
 	return (
 		<div className='flex items-center justify-center w-full h-full'>
 			<div className='px-4 text-center sm:text-lg md:text-xl text-gray-200 font-semibold flex flex-col items-center gap-2'>
-				<p>Welcome Monish !!! 👋 {/*{authUser.fullName}*/}</p>
-				<p>Select a chat to start messaging</p>
-				<IoLogoWechat className='text-7xl md:text-9xl mt-10 text-center' />
+				<p className="text-black">Welcome Monish !!! 👋 {/*{authUser.fullName}*/}</p>
+				<p className="text-black">Select a chat to start messaging</p>
+				<IoLogoWechat className='text-7xl text-black md:text-9xl mt-10 text-center' />
 			</div>
 		</div>
 	);
