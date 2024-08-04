@@ -88,4 +88,3 @@ export const logout = (req,res)=>{
         res.status(201).json({error:"Internal server error"});
     }
 }
-
