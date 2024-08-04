@@ -1,11 +1,16 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react'
+import SearchInput from './SearchInput.jsx'
+import Conversations from './Conversations.jsx'
+import LogoutButton from './LogoutButton.jsx'
 
 const Sidebar = () => {
   return (
-    <div>
+    <div className='border-r border-slate-300 p-4 flex flex-col'>
       <SearchInput/>
-      <div className='divider px-3'></div>
-      <Conversations/>
+      <div className='divider px-3 ov'></div>
+       <hr />
+       <Conversations/>
       <LogoutButton/>
     </div>
   )
