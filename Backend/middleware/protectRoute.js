@@ -5,7 +5,7 @@ const protectRoute = async(req,res,next)=>{
     try {
         const token = req.cookies.jwt;
         if(!token){
-            return res.status(401).json({error:"Unauthorized - No token provided"});
+            console.log({error:"Unauthorized - No token provided"});
         }
 
         const decoded = jwt.verify(token, process.env.JWT_SECRET);
@@ -22,7 +22,7 @@ const protectRoute = async(req,res,next)=>{
         req.user = user;
         next();
     } catch (error) {
-        res.status(500).json({error:"internal server error"});
+        console.log({error:"internal server error"});
     }
 }
 
