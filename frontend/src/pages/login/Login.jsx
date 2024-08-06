@@ -24,7 +24,7 @@ const Login = () => {
           <form onSubmit={handleSubmit}>
             <div >
               <label className='label p2'>
-                <span style={{color:'black'}} className='text-base label-text'>User Name</span>
+                <span style={{color:'black'}} className='text-base label-text'>Username</span>
               </label>
               <input type="text" placeholder='Enter Username' className='w-full input input-bordered h-10' 
               value={username}
