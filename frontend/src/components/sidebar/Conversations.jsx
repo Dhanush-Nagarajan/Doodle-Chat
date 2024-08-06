@@ -10,10 +10,10 @@ const Conversations = () => {
         <Conversation 
         key={conversation._id}
         conversation={conversation}
-        lastIdx={idx===conversation.length-1}
+        lastIdx={idx===conversations.length-1}
         />
       ))}
-        {loading?<span className="loading loading-spinner mx-auto"></span>:null}
+        {loading?<span className="loading loading-spinner mx-auto"></span> : null}
     </div>
   )
 }

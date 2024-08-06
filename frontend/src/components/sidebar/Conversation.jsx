@@ -23,7 +23,7 @@ const Conversation = ({ conversation, lastIdx}) => {
       </div>
     </div>
     
-    <div className="divider py-0 my-0 h-0"></div>
+    {!lastIdx && <div className="divider py-0 my-0 h-0"></div>}
     </> 
   )
 }
