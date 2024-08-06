@@ -3,7 +3,8 @@ import useConversation from "../../zustand/useConversation";
 import MessageInput from "./MessageInput"
 import Messages from "./Messages"
 import { IoLogoWechat } from "react-icons/io5";
-import { AuthContext } from "../../context/AuthContext";
+import { useAuthContext } from "../../context/AuthContext";
+
 
 const MessageContainer = () => {
    const {selectedConversation, setSelectedConversation} =useConversation();
@@ -32,11 +33,12 @@ const MessageContainer = () => {
 export default MessageContainer
 
 const NoChatSelected = () => {
+  const { authUser } = useAuthContext();
 
 	return (
 		<div className='flex items-center justify-center w-full h-full'>
 			<div className='px-4 text-center sm:text-lg md:text-xl text-gray-200 font-semibold flex flex-col items-center gap-2'>
-				<p className="text-black">Welcome {/*{authUser.fullName} */}!!! 👋 </p>
+				<p className="text-black">Welcome {authUser.fullName}!!! 👋 </p>
 				<p className="text-black">Select a chat to start messaging</p>
 				<IoLogoWechat className='text-7xl text-black md:text-9xl mt-10 text-center' />
 			</div>
