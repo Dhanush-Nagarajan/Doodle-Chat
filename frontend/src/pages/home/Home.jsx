@@ -1,8 +1,8 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
-import Sidebar from '../../components/sidebar/Sidebar.jsx'
-import MessageContainer from '../../components/messages/MessageContainer.jsx'
-import '../../App.css'
+import React from 'react';
+import Sidebar from '../../components/sidebar/Sidebar.jsx';
+import MessageContainer from '../../components/messages/MessageContainer.jsx';
+import '../../App.css';
 
 const Home = () => {
   return (
@@ -13,4 +13,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;
