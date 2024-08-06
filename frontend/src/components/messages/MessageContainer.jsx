@@ -22,7 +22,7 @@ const MessageContainer = () => {
      ) : (
        <>
        <div className="bg-slate-500 px-4 py-2 mb-2">
-         <span className="label-text text-black font-bold">To:</span> 
+         <span className="label-text text-black font-bold">To : </span> 
          <span className="text-black font-bold">{selectedConversation.fullName}</span>
        </div>
        <Messages/>

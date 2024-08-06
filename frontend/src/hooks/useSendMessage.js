@@ -8,6 +8,7 @@ const useSendMessage = () => {
   const {messages, setMessages,selectedConversation} = useConversation();
 
   const sendMessage=async(message)=>{
+      setLoading(true)
       try {
         const res = await fetch(`/api/messages/send/${selectedConversation._id}`,{
           method:'POST',

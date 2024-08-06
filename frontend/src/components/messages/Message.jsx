@@ -9,7 +9,7 @@ const Message = () => {
 
         </div>
       </div>
-     <div className="chat-bubble text-white bg-gray-500">Hi what is upp?</div>
+     <div className="chat-bubble text-white bg-gray-500">Hi what up Bro!!?</div>
       <div className="chat-footer opacity-50 text-xs flex gap-1 items-center text-black font-bold">12:34</div>
     </div>
   )
