@@ -1,15 +1,14 @@
 import { useEffect } from "react";
-import useConversation from "../../zustand/useConversation";
 import MessageInput from "./MessageInput"
 import Messages from "./Messages"
 import { IoLogoWechat } from "react-icons/io5";
 import { useAuthContext } from "../../context/AuthContext";
-
+import useConversation from "../../zustand/useConversation";
 
 const MessageContainer = () => {
    const {selectedConversation, setSelectedConversation} =useConversation();
 
-   useEffect(()=>{
+   useEffect(()=>{  
 
     return () => setSelectedConversation(null)
 
@@ -17,10 +16,14 @@ const MessageContainer = () => {
 
   return (
     <div className="md:min-w-[450px] flex flex-col">
-     {!selectedConversation?<NoChatSelected/>:(
+     {!selectedConversation ? 
+     (
+     <NoChatSelected/>
+     ) : (
        <>
        <div className="bg-slate-500 px-4 py-2 mb-2">
-         <span className="label-text text-black font-bold">To:</span> <span className="text-black font-bold">{selectedConversation.fullName}</span>
+         <span className="label-text text-black font-bold">To:</span> 
+         <span className="text-black font-bold">{selectedConversation.fullName}</span>
        </div>
        <Messages/>
        <MessageInput/>

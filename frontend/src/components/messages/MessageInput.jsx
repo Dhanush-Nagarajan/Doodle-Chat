@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { BiSend } from "react-icons/bi";
 import useSendMessage from "../../hooks/useSendMessage";
+import useConversation from "../../zustand/useConversation";
 
 const MessageInput = () => {
     const [message, setMessage]=useState('');
-    const [loading,sendMessage]=useSendMessage(); 
+    const {loading,sendMessage}=useSendMessage(); 
     const handleSubmit= async (e)=>{
       e.preventDefault();
       if(!message ) return;
