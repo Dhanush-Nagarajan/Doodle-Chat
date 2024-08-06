@@ -8,7 +8,6 @@ export const useSocketContext = () => {
 	return useContext(SocketContext);
 };
 
-// eslint-disable-next-line react/prop-types
 export const SocketContextProvider = ({ children }) => {
 	const [socket, setSocket] = useState(null);
 	const [onlineUsers, setOnlineUsers] = useState([]);
@@ -16,7 +15,7 @@ export const SocketContextProvider = ({ children }) => {
 
 	useEffect(() => {
 		if (authUser) {
-			const socket = io("https://chat-app-yt.onrender.com", {
+			const socket = io("https://localhost:5000", {
 				query: {
 					userId: authUser._id,
 				},
