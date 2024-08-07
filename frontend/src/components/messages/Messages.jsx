@@ -25,8 +25,13 @@ const Messages = () => {
 				))}
 
 {!loading && messages.length === 0 && (
+<<<<<<< HEAD
       <p className='text-center text-black'>Send a message to start the conversation</p>
     )}
+=======
+				<p className='text-center text-black'>Send a message to start the conversation</p>
+			)}
+>>>>>>> fcb730b88af0fde729cd34ea7ac18f8263d269ce
 		</div>
 	);
 };
