@@ -1,6 +1,7 @@
 import { useSocketContext } from "../../context/SocketContext";
 import useConversation from "../../zustand/useConversation";
 
+// eslint-disable-next-line react/prop-types
 const Conversation = ({ conversation, lastIdx}) => {
   const {selectedConversation,setSelectedConversation} = useConversation()
   

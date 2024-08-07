@@ -24,8 +24,9 @@ const Messages = () => {
 					</div>
 				))}
 
+{!loading && messages.length === 0 && (
       <p className='text-center text-black'>Send a message to start the conversation</p>
-
+    )}
 		</div>
 	);
 };
