@@ -24,7 +24,8 @@ const Messages = () => {
 					</div>
 				))}
 
-			
+      <p className='text-center text-black'>Send a message to start the conversation</p>
+
 		</div>
 	);
 };
